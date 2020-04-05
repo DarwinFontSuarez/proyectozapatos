@@ -1,0 +1,12 @@
+.Input{
+    margin: 0px 0px 0px 10px;
+    padding:  4px 0px 4px 15px;
+    border: 1px solid #000000;
+    border-radius: 15px 0px 0px 15px;
+    box-shadow: rgb(150,150,150) 3px 3px;
+};
+
+#divInput{
+    display: inline-block;
+    text-align: center;
+}
