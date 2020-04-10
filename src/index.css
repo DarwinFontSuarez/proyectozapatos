@@ -1,2 +1,11 @@
 
-
+.elementoLista{
+    margin: 3px 5px 5px 0px;
+    padding: 10px;
+    border: 1px solid #999999;
+border-radius: 6px;
+    display: inline-block;
+    list-style: none;
+background: #6ff752;
+box-shadow: rgb(150,150,150) 2px 2px;
+};

@@ -1,0 +1,5 @@
+1ro tomar valor a buscar >> Hecho "Elevando estados a Caja de Busqueda"
+2do recorrer los obj y buscar el valor de las propiedades >>No "for ..in obj "
+3ro Si coincide con alguna propiedad mostrar en un obj detalle del objeto
+    sino mostrar "Lo sentimosNo disponemos de este articulo" 
+

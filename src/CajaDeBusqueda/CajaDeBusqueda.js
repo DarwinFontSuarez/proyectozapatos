@@ -3,6 +3,7 @@ import './CajaDeBusqueda.css';
 import BBuscar from './bBuscar/BBuscar.js';
 import InputBuscar from './InputBuscar/InputBuscar.js';
 import Logo from './Logo/Logo.js'
+import zapatos from './zapatos.json';
 
 class CajaDeBusqueda extends React.Component {
 constructor(props){
@@ -23,6 +24,7 @@ OnChange(valor){
                 <BBuscar value = {this.state.value}/>
             
                 <a href="#"> Suscribase a nuestra tienda. </a>
+                
         </form>
     </div>
 )  
