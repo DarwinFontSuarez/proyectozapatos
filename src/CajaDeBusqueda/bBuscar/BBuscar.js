@@ -14,44 +14,32 @@ class BBuscar extends React.Component {
         const zapato = zapatos;
         let result = 0;
         let valor = this.props.value;
-console.log(valor);
-console.log(typeof(valor));
         function buscarTitle(obj){//callback para funcion filter
 /*1 recorro el objto con for..in
 2 verificar si la porp es una cadena si lo es 
-3 llamo a String.include()[este metodo es sensible a mayusculas y minusculas] con el value del input
-  
-            if('title' in obj && obj.title === valor) {
-                return true;
-            }else { 
-                return false;};
+3 llamo a String.include()[este metodo es sensible a mayusculas y minusculas] 
+con el value del input
 */
             let bandera ;
             for( let propiedad in obj){
                 if (typeof(obj[propiedad]) === 'string'){
-
-                    bandera = obj[propiedad].includes(valor);
-                    console.log(bandera);
+                    bandera = obj[propiedad].includes(valor);                    
                     if(bandera === true) return true;
                 };
             };
-            if(bandera === true) {return true;
-}else{ return false;}
+            if(bandera === true) {
+                return true;
+            }else{
+                return false;
+            }
         };
         
         result = zapatos.results.filter(buscarTitle);
-        console.log("result",result);
+        this.props.resultado(result);
+        
         e.preventDefault();
     };
 
-    /*BuscarValor (){
-        const zapato = zapatos;
-        let result = '';
-        for (let i = 0;((i <= zapato.results.lenth)||(result === this.props.value)); i++){
-            result = zapato.results[i].tittle;   
-        };
-        return result;
-    };*/
     render (){
         
         return ( <button id= "BBuscar" className= "BBuscar" onClick= {this.Onclick}> 🔎 </button> ); 

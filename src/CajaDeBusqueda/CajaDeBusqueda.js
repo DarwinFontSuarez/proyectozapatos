@@ -14,14 +14,14 @@ super(props);
 OnChange(valor){
     this.setState({value: valor});
 }
- render (){
- 
+ render (){//" value " ->obtengo value del input. 
+           //" resultados "->Elevo el resultado de busqueda
    return ( 
     <div className = "CajaDeBusqueda" id = "CajaDeBusqueda" >
         
         <form > <Logo  />
                 <InputBuscar elevar = {this.OnChange}/>
-                <BBuscar value = {this.state.value}/>
+                <BBuscar value = {this.state.value} resultado = {this.props.elvarResults}/> 
             
                 <a href="#"> Suscribase a nuestra tienda. </a>
                 

@@ -1,0 +1,30 @@
+//revisar esto con mas calma
+let rutas = [
+                {
+                    path: '/',
+                    exact: true,
+                    main: () => (<h1> Inicio <h1>)
+                }
+            ];
+/*
+    
+`
+
+        if (this.props.values !== 0) {
+            valores = this.Valores;
+            return (
+                <div>
+                    <Router>
+
+                        
+                    </Router>
+                </div>
+            );
+        } else{
+<div style = {{flex: 1, padding: "10px" }}>
+                            <Switch>
+                            {rutas.map((ruta,index)=> (<Route key = {index} path = {ruta.path} childern = {< ruta.main />}))}
+                            </Switch>
+                        </div>
+
+*/
