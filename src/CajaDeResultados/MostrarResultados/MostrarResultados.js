@@ -1,3 +1,8 @@
+/*
+Props:
+    values => Con los Resultados a Mostrar
+    setIdDetalle => Para elevar el valor a mostrar en MostrarDetalles
+*/
 import React from 'react';
 import ValoresList from './ValoresList.js';
 import {
@@ -5,6 +10,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import ListarRutas from './ListarRutas.js';
 
 export default class MostrarResultados extends React.Component{
 constructor (props){
@@ -21,8 +27,9 @@ super(props);
                                 <ul>
                                     <ValoresList values = {this.props.values}/>
                                 </ul>
-                            
+                                
                         </div>
+                        <ListarRutas values = {this.props.values} setIdDetalle = {this.props.setIdDetalle}/>
                     </Router>
             );
         }else {
